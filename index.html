@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>First JS exercise</title>
+</head>
+
+<body>
+    <div id="tictactoe" class="tictactoe">
+        <h2>Tic Tac Toe</h2>
+        <div class="wrapper">
+            <div class="explaination">
+                <p>
+                    Just a basic Tic Tac Toe game against the computer.<br />
+                    Once the game is over, either from the player's win, computer's win or from a tie, it'll be written
+                    down.<br />
+                    You can reset the game once it's over by clicking on the reset button.<br />
+                    There's also a turn counter, because why not ?<br />
+                    Finally, this little homework was the occasion for me to work a bit on design 'cause I love pretty
+                    things,
+                    so I've worked on neomorphism as well as neon effects.
+                </p>
+            </div>
+            <div class="game">
+                <div class="grid">
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                    <div class="box available"></div>
+                </div>
+            </div>
+            <div class="info">
+                <p class="gamesPlayed"></p>
+                <p class="players">
+                    Player : X <br />
+                    AI : O </p>
+                <p class="turns">It's player's turn !</p>
+                <p class="count">Turns : 0</p>
+                <p class="victories"></p>
+                <p class="results"></p>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

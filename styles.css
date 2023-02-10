@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f9fc;
+  position: relative;
+}
+
+/* Tic tac toe */
+
+.explaination {
+  width: 33%;
+  padding-inline: 5%;
+  text-align: start;
+  color: #575656;
+  text-shadow: none;
+}
+
+.tictactoe {
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+  color: #e64cc4;
+  text-shadow: 0px 0px 10px #e64cc4;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 30vw;
+  height: 30vw;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 23px;
+  background: #282828;
+  box-shadow: 20px 20px 33px #212121, -20px -20px 33px #2f2f2f;
+}
+
+.box {
+  border-radius: 23px;
+  background: #282828;
+  box-shadow: 20px 20px 33px #212121, -20px -20px 33px #2f2f2f;
+  font-weight: bold;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box.available {
+  border-radius: 23px;
+  background: #282828;
+  box-shadow: inset 20px 20px 33px #212121, inset -20px -20px 33px #2f2f2f;
+  font-weight: bold;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 33%;
+}
+
+.info > p {
+  margin-block: 0.5em;
+}
+
+.players {
+  text-align: start;
+}
+
+.victories {
+  text-align: start;
+}
+
+.reset {
+  margin-top: 2em;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #e64cc4;
+  border: solid 3px #e64cc4;
+  box-shadow: 0px 0px 5px #e64cc4;
+  text-shadow: 0px 0px 5px #e64cc4;
+  transition: all 150ms;
+}
+
+.reset:hover {
+  background-color: #e64cc4;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #282828;
+  border: solid 3px #e64cc4;
+  box-shadow: 0px 0px 10px #e64cc4;
+  text-shadow: 0px 0px 10px #e64cc4;
+}
